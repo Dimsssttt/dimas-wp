@@ -1,0 +1,46 @@
+# --- WordPress Core ---
+# Abaikan semua file core WordPress jika Anda hanya mengembangkan tema/plugin
+# (Hapus tanda # di bawah ini jika Anda menginstal WP via Git tapi tidak ingin melacak core-nya)
+# /*
+# !/wp-content/
+
+# --- File Konfigurasi & Sensitif ---
+wp-config.php
+wp-config-sample.php
+.htaccess
+sitemap.xml
+sitemap.xml.gz
+*.log
+
+# --- Folder Upload (Media, Gambar, dll) ---
+wp-content/uploads/
+wp-content/blogs.dir/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/backups/
+
+# --- Cache & File Sementara ---
+wp-content/cache/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/object-cache.php
+
+# --- Tema & Plugin (Opsional) ---
+# Jika Anda menggunakan plugin pihak ketiga, disarankan untuk mengabaikannya 
+# dan hanya melacak plugin/tema buatan sendiri.
+# wp-content/plugins/
+# wp-content/themes/
+
+# --- File Sistem & IDE ---
+.DS_Store
+Thumbs.db
+.wp-env.json
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# --- Dependency Managers ---
+node_modules/
+vendor/
+.npm/
